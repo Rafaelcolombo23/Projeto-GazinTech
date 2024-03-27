@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "devs" ALTER COLUMN "idade" SET DATA TYPE TEXT;
