@@ -44,6 +44,44 @@ export default function Devs() {
       nivel_id
     };
 
+
+    if (!/^\d+$/.test(data.idade)) {
+
+      alert("preencha corretamente")
+      return
+    }
+
+    if(nome === ''){
+
+      alert("preencha corretamente")
+      return
+    }
+    if(idade === ''){
+
+      alert("preencha corretamente")
+      return
+    }
+
+    if(hobby === ''){
+      alert("preencha corretamente")
+      return
+    }   
+
+    if(dataNascimento === ''){
+      alert("preencha corretamente")
+      return
+    }
+    if(sexo === ''){
+      alert("preencha corretamente")
+      return
+    }
+    if(nivel_id === ''){
+      alert("preencha corretamente")
+      return
+    }   
+
+
+
     try {
       const apiClient = setupAPIClient();
       const response = await apiClient.post("/devs", data);

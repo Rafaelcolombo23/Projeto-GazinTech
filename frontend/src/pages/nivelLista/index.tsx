@@ -19,17 +19,22 @@ export default function nivelLista() {
 
   const [niveis, setNiveis] = useState<Nivel[]>([]);
 
+
   const customStyles = {
     content: {
+      width: "500px",
       top: "50%",
       left: "50%",
       right: "auto",
       bottom: "auto",
+      padding: "50px",
       marginRight: "-50%",
       transform: "translate(-50%, -50%)",
       backgroundColor: "#1D1D2E",
       color: "#fff",
-    },
+      borderRadius: "50px",
+    }
+
   };
 
   Modal.setAppElement("#yourAppElement");
@@ -100,7 +105,6 @@ export default function nivelLista() {
         <main className={styles.container}>
           <div className={styles.containerHeader}>
             <h1>Lista de Niveis</h1>
-            <button>Recarregar</button>
           </div>
 
           {niveis.map((nivel) => (

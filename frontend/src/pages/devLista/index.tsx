@@ -34,14 +34,19 @@ export default function DevLista() {
   const [id_devs, setDev] = useState(0);
   const customStyles = {
     content: {
+      width: "1000px",
       top: "50%",
       left: "50%",
       right: "auto",
       bottom: "auto",
-      marginRight: "-50%",
+      padding: "50px",
+      paddingBottom: "50px",
+      margin: "20px",
       transform: "translate(-50%, -50%)",
       backgroundColor: "#1D1D2E",
       color: "#fff",
+      borderRadius: "50px",
+
     },
   };
 
@@ -130,8 +135,6 @@ export default function DevLista() {
         <main className={styles.container}>
           <div className={styles.containerHeader}>
             <h1>Lista de Devs</h1>
-
-            <button>Recarregar</button>
           </div>
 
           {devs.map((dev) => (
